@@ -1,5 +1,5 @@
 import math
-
+from datetime import date
 
 def firstrun():
     return "success"
@@ -11,3 +11,6 @@ def area_circle(radius):
 
 def list_ends(list_in):
     return list_in[0], list_in[len(list_in)]
+
+def days_between(date1, date2):
+    return date2 - date1

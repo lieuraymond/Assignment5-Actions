@@ -22,3 +22,8 @@ class TestCase(unittest.TestCase):
         first, last = task.list_ends(test_list)
         self.assertEqual(first, "apple")
         self.assertEqual(last, "orange")
+
+    def test_days_between(self):
+        date1 = date(2020, 3, 1)
+        date2 = date(2020, 3, 20)
+        self.assertEqual(task.days_between(date1, date2), 19)
