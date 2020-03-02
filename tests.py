@@ -1,5 +1,6 @@
 import unittest
 import task
+import math
 
 
 class TestCase(unittest.TestCase):
@@ -14,4 +15,4 @@ class TestCase(unittest.TestCase):
 
     def test_area_circle(self):
         radius = 5
-        self.assertEqual(area_circle(5), pi * pow(radius, 2))
+        self.assertEqual(task.area_circle(5), math.pi * pow(radius, 2))
